@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap-switch.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>FCC Settings Page</title>
+</head>
+<body>
+  <!-- Navbar start -->
+    <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">FreeCodeCamp</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        </ul>
+      </div> -->
+      <!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- Navbar ends -->
+
+  <div class="container">
+  <h3>Account Settings</h3>
+  <!-- Profile Settings start -->
+    <div class="row">
+      <div class="profile col-md-3">
+          <img class="profile-picture" src="http://lorempixel.com/output/nature-q-c-300-300-5.jpg" alt="Profile Picture">
+      </div>
+        <div class="profile-description col-md-9">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo atque perferendis omnis delectus, veniam iste ut ex tenetur numquam. Fugit nemo non repellat, quis cumque quo numquam cupiditate sequi sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Profile Settings end -->
+    <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <p class="settings-name">Make my Profile Private</p>
+      </div>
+      <div class="col-md-3 toggle-switch">
+        <input type="checkbox" data-handle-width="32px"	data-on-color="success" data-off-color="default" data-on-text="Yes" data-off-text="No" data-size="medium"		name="my-checkbox" checked>
+      </div>
+    </div>
+    <hr>
+    </div>
+<!-- Profile Settings end -->
+<!-- Night mode start -->
+    <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <p class="settings-name">Night Mode</p>
+      </div>
+      <div class="col-md-3 toggle-switch">
+        <input type="checkbox" data-handle-width="32px"	data-on-color="success" data-off-color="default" data-on-text="On" data-off-text="Off" data-size="medium"		name="my-checkbox" checked>
+      </div>
+    </div>
+    <hr>
+    </div>
+<!-- Night mode end -->
+<!-- Email Setings start -->
+<div class="container">
+  <div class="row">
+  <div class="col-md-9">
+  <h3>Email Settings</h3>
+  <p class="settings-name">Email Address</p>
+  <p>johndoe@gmail.com</p>
+  </div>
+  <div class="col-md-3">
+    <button>Edit Email</button>
+  </div>
+</div>
+</div>
+<!-- Email settings end -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/bootstrap-switch.min.js"></script>
+<script>
+$("[name='my-checkbox']").bootstrapSwitch();
+</script>
+</body>
+</html>
